@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Map_Distance_calculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="4Qe-VK-7FD">
+                                <rect key="frame" x="36" y="20" width="248" height="314.5"/>
+                            </mapView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6r6-G0-m10">
+                                <rect key="frame" x="36" y="414.5" width="248" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Distance in (meters)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VT9-yV-9a0">
+                                <rect key="frame" x="35" y="385.5" width="256" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="VT9-yV-9a0" secondAttribute="trailing" constant="13" id="2nC-FO-33Q"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="6r6-G0-m10" secondAttribute="bottom" constant="133" id="6X5-zE-Hzk"/>
+                            <constraint firstItem="6r6-G0-m10" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="Kzv-WF-m0I"/>
+                            <constraint firstItem="6r6-G0-m10" firstAttribute="top" secondItem="VT9-yV-9a0" secondAttribute="bottom" constant="8" id="Oh4-QM-lsH"/>
+                            <constraint firstItem="4Qe-VK-7FD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="Oxb-rt-hTv"/>
+                            <constraint firstItem="VT9-yV-9a0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="19" id="UPJ-1C-kcY"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="6r6-G0-m10" secondAttribute="trailing" constant="20" id="Zfs-AF-RUY"/>
+                            <constraint firstItem="VT9-yV-9a0" firstAttribute="top" secondItem="4Qe-VK-7FD" secondAttribute="bottom" constant="51" id="c2A-Og-zc6"/>
+                            <constraint firstItem="4Qe-VK-7FD" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="j0i-EO-h3U"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="4Qe-VK-7FD" secondAttribute="trailing" constant="20" id="syZ-Gc-gwj"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="First_Place" destination="4Qe-VK-7FD" id="Ri4-dj-FBc"/>
+                        <outlet property="lblDistance" destination="6r6-G0-m10" id="TSL-LQ-0Q5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="130" y="290"/>
+        </scene>
+    </scenes>
+</document>
